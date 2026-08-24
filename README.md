@@ -6,6 +6,9 @@
 > This repository is maintained through maintainer-led collaboration with AI
 > agents. Recipes and scripts are reviewed as ordinary source code; an agent
 > instruction never replaces user consent for a host-level change.
+>
+> The provider-neutral working agreement is maintained in
+> [COLLABORATION.md](COLLABORATION.md).
 
 **[Link zur deutschen README](README.de.md)**
 

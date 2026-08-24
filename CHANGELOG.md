@@ -6,7 +6,13 @@ All notable changes to the AGIT Templateverse Toolkit are documented here.
 
 ### Added
 
+- Add compact provider-neutral `AGENTS.md` and `COLLABORATION.md` contracts
+  without importing project lifecycle or milestone skills.
 - Establish the bilingual public toolkit baseline and host-helper safety model.
+
+### Changed
+
+- Remove the active provider-specific root `CODEX.md` and `ChatGPT.md` files.
 - Add the first Codex/Git Credential Manager recipe in English and German.
 - Add a read-only PowerShell diagnostic for prerequisites, persisted Codex
   settings and the effective Git credential helper.

@@ -7,6 +7,9 @@
 > KI-Agenten gepflegt. Recipes und Skripte werden wie gewöhnlicher Quellcode
 > geprüft; eine Agentenanweisung ersetzt niemals die Zustimmung zu einer
 > Änderung am lokalen System.
+>
+> Die providerneutrale Arbeitsvereinbarung wird in
+> [COLLABORATION.md](COLLABORATION.md) gepflegt.
 
 **[Link to the English README](README.md)**
 
