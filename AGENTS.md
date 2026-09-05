@@ -1,6 +1,7 @@
 # AGENTS.md
 
-Resident safety and routing contract for this public utility repository.
+Resident safety and routing contract for this public Dev Template-derived
+utility project.
 
 - Inspect repository, branch, worktree and staging; preserve existing changes.
 - Keep recipes generic, privacy-conscious and independently usable. Never copy
@@ -17,7 +18,11 @@ Resident safety and routing contract for this public utility repository.
 - Do not handle filesystem permissions, ACLs, operating-system identities or
   synchronization settings without a later accepted decision.
 - For bounded work use requested targets and applicable checks. Read
-  `COLLABORATION.md` and `PROJECT_CONTEXT.md` for utility-wide or collaboration
-  work; load recipe-specific evidence only when relevant.
+  `COLLABORATION.md` and `PROJECT_CONTEXT.md` for project-wide or collaboration
+  work; load `IDEAS.md` only for idea work and recipe-specific evidence only
+  when relevant.
+- AGIT Dev Template is the ongoing development source, not an automatic
+  dependency. Template harmonization must be explicitly selected, versioned,
+  reviewed and adapted to this project's stricter host-change safety model.
 - Review diffs and run `git diff --check`; add bilingual, script and synthetic
   checks as applicable. Report limitations and suitable commit metadata.

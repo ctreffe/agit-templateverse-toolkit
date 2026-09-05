@@ -1,8 +1,10 @@
 # Toolkit Collaboration Contract
 
-This provider-neutral contract governs maintainer–assistant work on public,
-reusable Templateverse utilities. The toolkit is not a project template and
-does not inherit project lifecycle or milestone skills.
+This provider-neutral contract governs maintainer–assistant work on this
+public, reusable utility project. The Toolkit is derived from AGIT Dev Template
+for future development and deliberate harmonization; it is not a Templateverse
+member or project template and does not automatically inherit template files,
+skills or lifecycle changes.
 
 The maintainer owns scope, publication, compatibility, security tradeoffs and
 releases. The assistant researches official sources, proposes the smallest

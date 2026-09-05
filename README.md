@@ -26,11 +26,13 @@ Templateverse workflows.
 This toolkit is not a project template and does not contain private
 Templateverse governance. It can be used independently.
 
-## Templateverse membership
+## Project provenance
 
-This repository is an official public utility member of the AGIT Templateverse.
-It is coordinated through a private governance repository named
-`agit-templateverse`, but users do not need access to that repository.
+This repository is an independent public project derived from
+[AGIT Dev Template](https://github.com/ctreffe/agit-dev-template). It is tracked
+as a derived project, not governed as a Templateverse member. Template updates
+are adopted only through deliberate, reviewed harmonization; users do not need
+access to the private `agit-templateverse` governance repository.
 
 The public project templates are:
 
@@ -38,8 +40,8 @@ The public project templates are:
 - [AGIT Dev Template](https://github.com/ctreffe/agit-dev-template)
 - [AGIT Documentation Template](https://github.com/ctreffe/agit-docs-template)
 
-All Templateverse members may link to this toolkit when a concrete public
-recipe is relevant; no member must advertise it by default.
+Any project may link to a concrete public Toolkit recipe when relevant. Such a
+link does not create membership, inheritance or host-change authorization.
 
 ## Safety model
 
@@ -75,7 +77,7 @@ Automatic config patching, installers and releases are not yet implemented.
 
 Reusable improvements are evaluated for safety, portability and maintenance
 cost before becoming a recipe. Toolkit releases remain independent from the
-project templates and from the private governance repository.
+Dev Template and from the private governance repository.
 
 ## License
 
