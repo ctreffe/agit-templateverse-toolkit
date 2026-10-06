@@ -1,17 +1,35 @@
 # Project Context
 
+## Selected template synchronization: 2026-10-06
+
+- Verified local source commit: `6a2cc69831c99dd68d00fba9063bd404ab0b9df7`.
+- Separate bilingual guide adoption: [DDR-0001](decisions/DDR-0001-project-introductions-and-template-guides.md).
+- Selected ongoing methods and intentional deviations: [TEMPLATE_SYNC.md](TEMPLATE_SYNC.md).
+- Previous full/historical source baselines remain unchanged; this selection
+  does not claim whole-template adoption or repeat initialization.
+
+## Current source-template reference
+
+- Source for selected synchronization: [AI Dev Template](https://github.com/ctreffe/ai-template-dev).
+- Portable identity and former-name mapping: [TEMPLATE_SOURCE.md](TEMPLATE_SOURCE.md).
+- Local clone resolution: ignored RETROSPECTIVE_PATHS.local.md, based on
+  [RETROSPECTIVE_PATHS.example.md](RETROSPECTIVE_PATHS.example.md).
+- Renaming preserves recorded versions, commit baselines and project adaptations;
+  it is not a template update or a newly completed harmonization.
+
 ## Identity
 
 - Repository: AGIT Templateverse Toolkit
-- Role: Independent public utility project derived from AGIT Dev Template; not
+- Role: Independent public utility project derived from AI Dev Template; not
   a project template
 - License: MIT
 - Version: 0.1.0
 - Templateverse membership: not a member; registered by Governance as a
   derived project
-- Development source: AGIT Dev Template
+- Development source: AI Dev Template
 - Historical initialization baseline: Not established
-- First harmonization target: Dev Template `7ac6e8f`; not yet applied
+- Earlier proposed first harmonization target: Dev Template `7ac6e8f`; never recorded as applied.
+- First selected ongoing-method adoption: source commit recorded above; historical initialization remains unknown.
 
 ## Current objective
 
@@ -41,4 +59,4 @@ Manager recipe without storing credentials or changing global Git settings.
 
 Choose one bounded project objective: assess the existing format-preserving
 config patcher candidate, decide the Windows utility direction in IDEA-0003 or
-explicitly select the first Dev Template harmonization. None is automatic.
+select further Dev Template content beyond the ongoing methods recorded above. None is automatic.

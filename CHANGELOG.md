@@ -4,6 +4,21 @@ All notable changes to the AGIT Templateverse Toolkit are documented here.
 
 ## [Unreleased]
 
+### Selected template synchronization
+
+- Add separately selected adapted English/German template guides while retaining
+  project introductions and their existing content.
+
+- Adapt ongoing workflows and validation tooling to the verified renamed local
+  source; preserve project authority and intentional deviations in TEMPLATE_SYNC.md.
+
+
+### Source-template naming
+
+- Resolve current provenance, active guidance and per-device source settings
+  through AI Dev Template (ctreffe/ai-template-dev); preserve historical names and
+  exact initialization/harmonization baselines.
+
 ### Added
 
 - Add a project-local idea backlog for the transferred Windows configuration

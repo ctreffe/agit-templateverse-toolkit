@@ -14,7 +14,12 @@
 **[Link to the English README](README.md)**
 
 Wiederverwendbare, datenschutzbewusste Einrichtungs-Rezepte und lokale
-Hilfswerkzeuge für Workflows des AGIT Templateverse.
+Hilfswerkzeuge für Workflows des AI Templateverse.
+
+## Workflows und Skills
+
+[Angepasste Template-Anleitung](TEMPLATE_README.de.md)
+
 
 ## Inhalt des Repositorys
 
@@ -30,17 +35,17 @@ Templateverse-Governance. Es kann unabhängig verwendet werden.
 ## Projektherkunft
 
 Dieses Repository ist ein eigenständiges öffentliches Projekt, das vom
-[AGIT Dev Template](https://github.com/ctreffe/agit-dev-template) abgeleitet
+[AI Dev Template](https://github.com/ctreffe/ai-template-dev) abgeleitet
 ist. Es wird als abgeleitetes Projekt dokumentiert und nicht als Mitglied des
 Templateverse verwaltet. Template-Aktualisierungen werden nur durch bewusste,
 geprüfte Harmonisierung übernommen; Nutzende benötigen keinen Zugriff auf das
-private Governance-Repository `agit-templateverse`.
+private Governance-Repository `ai-templateverse`.
 
 Die öffentlichen Projekttemplates sind:
 
-- [AGIT Project Template](https://github.com/ctreffe/agit-project-template)
-- [AGIT Dev Template](https://github.com/ctreffe/agit-dev-template)
-- [AGIT Documentation Template](https://github.com/ctreffe/agit-docs-template)
+- [AI Project Template](https://github.com/ctreffe/ai-template-project)
+- [AI Dev Template](https://github.com/ctreffe/ai-template-dev)
+- [AI Documentation Template](https://github.com/ctreffe/ai-template-docs)
 
 Jedes Projekt darf auf ein konkretes öffentliches Toolkit-Recipe verweisen,
 wenn es relevant ist. Ein solcher Link begründet weder Mitgliedschaft noch
@@ -84,6 +89,13 @@ implementiert.
 Wiederverwendbare Verbesserungen werden auf Sicherheit, Portabilität und
 Wartungskosten geprüft, bevor sie zu einem Recipe werden. Toolkit-Releases
 bleiben vom Dev Template und vom privaten Governance-Repository unabhängig.
+
+## Aktuelles Quell-Template
+
+Das aufgezeichnete Quell-Template ist [AI Dev Template](https://github.com/ctreffe/ai-template-dev).
+[TEMPLATE_SOURCE.md](TEMPLATE_SOURCE.md) erklaert den frueheren Namen, die
+unveraenderte Baseline und die lokale Quellklon-Zuordnung fuer eine ausgewaehlte
+Synchronisation.
 
 ## Lizenz
 

@@ -12,8 +12,13 @@
 
 **[Link zur deutschen README](README.de.md)**
 
-Reusable, privacy-conscious setup recipes and local helper tools for AGIT
+Reusable, privacy-conscious setup recipes and local helper tools for AI
 Templateverse workflows.
+
+## Workflows and Skills
+
+[Adapted template guide](TEMPLATE_README.md)
+
 
 ## What this repository provides
 
@@ -29,16 +34,16 @@ Templateverse governance. It can be used independently.
 ## Project provenance
 
 This repository is an independent public project derived from
-[AGIT Dev Template](https://github.com/ctreffe/agit-dev-template). It is tracked
+[AI Dev Template](https://github.com/ctreffe/ai-template-dev). It is tracked
 as a derived project, not governed as a Templateverse member. Template updates
 are adopted only through deliberate, reviewed harmonization; users do not need
-access to the private `agit-templateverse` governance repository.
+access to the private `ai-templateverse` governance repository.
 
 The public project templates are:
 
-- [AGIT Project Template](https://github.com/ctreffe/agit-project-template)
-- [AGIT Dev Template](https://github.com/ctreffe/agit-dev-template)
-- [AGIT Documentation Template](https://github.com/ctreffe/agit-docs-template)
+- [AI Project Template](https://github.com/ctreffe/ai-template-project)
+- [AI Dev Template](https://github.com/ctreffe/ai-template-dev)
+- [AI Documentation Template](https://github.com/ctreffe/ai-template-docs)
 
 Any project may link to a concrete public Toolkit recipe when relevant. Such a
 link does not create membership, inheritance or host-change authorization.
@@ -78,6 +83,12 @@ Automatic config patching, installers and releases are not yet implemented.
 Reusable improvements are evaluated for safety, portability and maintenance
 cost before becoming a recipe. Toolkit releases remain independent from the
 Dev Template and from the private governance repository.
+
+## Current source template
+
+The recorded source is [AI Dev Template](https://github.com/ctreffe/ai-template-dev).
+[TEMPLATE_SOURCE.md](TEMPLATE_SOURCE.md) explains the former name, unchanged
+baseline and local source-clone mapping for selected synchronization.
 
 ## License
 

@@ -21,8 +21,24 @@ utility project.
   `COLLABORATION.md` and `PROJECT_CONTEXT.md` for project-wide or collaboration
   work; load `IDEAS.md` only for idea work and recipe-specific evidence only
   when relevant.
-- AGIT Dev Template is the ongoing development source, not an automatic
+- AI Dev Template is the ongoing development source, not an automatic
   dependency. Template harmonization must be explicitly selected, versioned,
   reviewed and adapted to this project's stricter host-change safety model.
 - Review diffs and run `git diff --check`; add bilingual, script and synthetic
   checks as applicable. Report limitations and suitable commit metadata.
+
+Codex skill edits use scripts/Test-CodexSkill.ps1 with an exact managed
+interpreter and the pinned dependency described in VALIDATION.md.
+
+## Selected template workflows
+
+Use the retained skills for ongoing work: start-task and handoff-task for
+bounded tasks; explicitly invoke review-project, check-consistency,
+sync-template and perform-retrospective for their specialized outcomes.
+Reuse-fixes consults only this project's confirmed corrections. If no local
+record exists, diagnose within current authority and retain only a verified
+project-local fix; never copy another repository's incidents.
+Initialization is complete: do not rerun it, recreate removed creation skills
+or substitute upstream context, roadmap, decisions, versions or licensing.
+Local access, domain and protected-action rules remain authoritative.
+See [TEMPLATE_SYNC.md](TEMPLATE_SYNC.md) for the selected source and deviations.

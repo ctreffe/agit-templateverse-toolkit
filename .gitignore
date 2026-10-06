@@ -1,0 +1,9 @@
+
+# Per-device source-template and retrospective destinations
+/RETROSPECTIVE_PATHS.local.md
+
+/.venv/
+
+/.codex-output/
+
+/TROUBLESHOOTING.local.md
