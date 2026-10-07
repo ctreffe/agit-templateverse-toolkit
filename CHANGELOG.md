@@ -6,6 +6,10 @@ All notable changes to the AGIT Templateverse Toolkit are documented here.
 
 ### Selected template synchronization
 
+- Correct the omitted current commit skills and adopt their bounded normal-push
+  authority rule under PDR-0001. Align both workflow guides and local contracts;
+  classify retained validation and documentation adaptations accurately.
+
 - Add separately selected adapted English/German template guides while retaining
   project introductions and their existing content.
 

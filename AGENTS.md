@@ -10,7 +10,10 @@ utility project.
 - Read-only checks and authorized edits are allowed. Commits, tags, pushes,
   pulls, merges, rebases, resets, reverts, branch or stash actions, destructive
   restores and direct `.git/` changes require a specific instruction using
-  `explicit`, `explicitly` or German `explizit`; authorize each action.
+  `explicit`, `explicitly` or German `explizit`.
+- In `commit-changes` or `commit-milestone`, explicit commit authorization
+  for this repository includes the normal push to its verified existing
+  upstream unless excluded. Other Git actions remain separately controlled.
 - Before a host-changing helper, disclose paths, persistent effects, privilege,
   verification and removal; begin with inspection or dry run and require a
   user-started affirmative action. Ask before installation, host changes,
@@ -42,3 +45,4 @@ Initialization is complete: do not rerun it, recreate removed creation skills
 or substitute upstream context, roadmap, decisions, versions or licensing.
 Local access, domain and protected-action rules remain authoritative.
 See [TEMPLATE_SYNC.md](TEMPLATE_SYNC.md) for the selected source and deviations.
+The bounded commit-and-push decision is [PDR-0001](decisions/PDR-0001-bounded-commit-and-push-authority.md).

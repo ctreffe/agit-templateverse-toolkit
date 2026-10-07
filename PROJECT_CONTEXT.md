@@ -60,3 +60,10 @@ Manager recipe without storing credentials or changing global Git settings.
 Choose one bounded project objective: assess the existing format-preserving
 config patcher candidate, decide the Windows utility direction in IDEA-0003 or
 select further Dev Template content beyond the ongoing methods recorded above. None is automatic.
+
+## Commit workflow authority
+
+[PDR-0001](decisions/PDR-0001-bounded-commit-and-push-authority.md) adopts the selected source commit skills and bounded normal
+push after explicit commit authorization. Other protected actions and project
+access, publication and domain rules retain separate authority. See
+[TEMPLATE_SYNC.md](TEMPLATE_SYNC.md) for the correction scope and evidence.
