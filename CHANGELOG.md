@@ -4,6 +4,10 @@ All notable changes to the AGIT Templateverse Toolkit are documented here.
 
 ## [Unreleased]
 
+- Remove retired inherited skill aliases and completed initialization
+  definitions from ongoing discovery; add the current-inventory check to
+  template synchronization. Preserve domain rules and setup provenance.
+
 ### Selected milestone-tag workflow update
 
 - Adopt the current commit-milestone annotated version-tag and exact push bundle;
