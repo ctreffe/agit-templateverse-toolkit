@@ -4,6 +4,19 @@ All notable changes to the AGIT Templateverse Toolkit are documented here.
 
 ## [Unreleased]
 
+### Selected milestone-tag workflow update
+
+- Adopt the current commit-milestone annotated version-tag and exact push bundle;
+  align resident/collaboration/repository rules and both workflow-guide languages.
+  Preserve ordinary-commit authority, exclusions and project/domain safeguards.
+
+### Detailed source workflow synchronization
+
+- Align ongoing skills/support files and operating contracts with AI Dev Template
+  1.6.0; reconcile current routing, authority, optional planning and guide
+  inventory while preserving domain safeguards and project-owned state.
+
+
 ### Selected template synchronization
 
 - Correct the omitted current commit skills and adopt their bounded normal-push
