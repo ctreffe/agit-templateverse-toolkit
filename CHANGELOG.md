@@ -4,6 +4,10 @@ All notable changes to the AGIT Templateverse Toolkit are documented here.
 
 ## [Unreleased]
 
+- Adopt explicit-only manage-external-storage and optional read-only/synthetic
+  helpers from the verified source template; preserve project-specific storage,
+  access and routine workflow contracts.
+
 - Remove retired inherited skill aliases and completed initialization
   definitions from ongoing discovery; add the current-inventory check to
   template synchronization. Preserve domain rules and setup provenance.
