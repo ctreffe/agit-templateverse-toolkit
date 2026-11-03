@@ -53,3 +53,21 @@ inventories, role navigation, AI collaboration disclosure and license notices;
 guides contain no inherited badges. DOCUMENTATION.md's human-readable guidance
 is complementary to the current contract. Record durable choices with the
 local decisions/ taxonomy; keep existing accepted records and MIT rights.
+
+## Restricted-source metadata workflow
+
+Use explicit `manage-restricted-storage` and [RESTRICTED_STORAGE.md](RESTRICTED_STORAGE.md)
+for selected empty-area setup, device connection, approved metadata maintenance
+or invented-only protection checks. Existing access rules, inventories and
+provider/recipient choices prevail. Record layout, catalog, configuration and
+effective protection separately; failures/stale evidence remain visible.
+Metadata never authorizes source discovery, reading, processing or transmission.
+No live area, setting, policy, service or test is activated by template adoption.
+
+## Optional AI collaboration branch recommendation
+
+Preserve an established local branch convention. Where none exists, the source
+recommends `<type>/ai-dev/<topic>` with a short lowercase kebab-case topic and
+an appropriate semantic type, such as feature, fix, docs or chore. Agree local
+defaults when needed; this recommendation creates, switches or renames no branch.
+Every Git action retains its repository/action-specific control-word authority.

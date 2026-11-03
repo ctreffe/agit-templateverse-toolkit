@@ -35,3 +35,13 @@ disposable temporary files and final deliverables. Use cataloged provenance
 when those roles are introduced; temp is never versioned. Inspect no unapproved
 or restricted material. Access, Git versioning, external transfer and publication
 are separate; a clean automated scan grants none of them.
+
+## Restricted-source metadata workflow
+
+Use explicit `manage-restricted-storage` and [RESTRICTED_STORAGE.md](RESTRICTED_STORAGE.md)
+for selected empty-area setup, device connection, approved metadata maintenance
+or invented-only protection checks. Existing access rules, inventories and
+provider/recipient choices prevail. Record layout, catalog, configuration and
+effective protection separately; failures/stale evidence remain visible.
+Metadata never authorizes source discovery, reading, processing or transmission.
+No live area, setting, policy, service or test is activated by template adoption.
