@@ -11,6 +11,16 @@ of introductions and truthful project license information at the bottom.
 Guides retain attribution and omit inherited badges. Source README updates map
 to the guides and never replace project introductions.
 
+## Concision and Understanding
+
+Write as long as necessary and as short as possible for the purpose and audience.
+Understanding takes priority over brevity. Keep necessary reasoning, evidence
+and examples; remove repetition, digressions and irrelevant implementation detail.
+Concision is not a word-count target or telegraphic phrasing. When revising,
+preserve prerequisites, interface behavior, side effects, failure handling and
+verification needed to use or maintain the software. Explain non-obvious
+tradeoffs where they affect the reader's decision.
+
 ## Human-readable helpers
 
 Document each recipe's purpose, inputs, prerequisites, paths, privilege,
@@ -40,7 +50,7 @@ are separate; a clean automated scan grants none of them.
 
 Use explicit `manage-restricted-storage` and [RESTRICTED_STORAGE.md](RESTRICTED_STORAGE.md)
 for selected empty-area setup, device connection, approved metadata maintenance
-or invented-only protection checks. Existing access rules, inventories and
+or selected project profile work. Existing access rules, inventories and
 provider/recipient choices prevail. Record layout, catalog, configuration and
 effective protection separately; failures/stale evidence remain visible.
 Metadata never authorizes source discovery, reading, processing or transmission.

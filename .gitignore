@@ -18,3 +18,15 @@
 
 # Adopted private restricted-storage state
 RESTRICTED_STORAGE.local.md
+# Non-secret device-specific Git route bindings and evidence
+/GIT_TRANSPORT.local.md
+
+# Approved local Codex configuration transaction state
+/CODEX_CONFIG.local.md
+/.codex/config-recovery/
+/.codex/config.toml
+/.codex/restricted-storage.original.toml
+
+# Temporary working files; retain only the public usage guide
+/temp/*
+!/temp/README.md

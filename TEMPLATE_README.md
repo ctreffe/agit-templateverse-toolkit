@@ -156,6 +156,38 @@ The maintainer coordinates cross-template evolution in a private governance repo
 Governance coordination does not create hidden engineering requirements. Every change that affects this template must be represented here through maintained guidance, Decision Records where appropriate, the changelog and release history. Reusable improvements must keep code, tests, configuration and user-facing documentation aligned and must not overfit one implementation experience.
 
 
+## Current template methods
+
+The inherited [template mission](PHILOSOPHY.md#template-mission) describes shared
+workflow purpose; PROJECT_CONTEXT.md owns the independent public utility purpose.
+Explicit reviews and retrospectives assess alignment under maintainer control.
+Hybrid methods or a specialist-source change require deliberate selection; neither
+template recency nor a review changes local intent, membership or access.
+
+[manage-codex-config](.agents/skills/manage-codex-config/SKILL.md) is the single
+writer for requested project settings and selected protection deltas under
+[CODEX_CONFIGURATION.md](CODEX_CONFIGURATION.md). Storage work owns protection,
+activation and required workflow usability. Preserve config and recovery state;
+this adoption activates no profile, adapter or host setting. Initialization stays
+complete. Git workflows use [GIT_TRANSPORT.md](GIT_TRANSPORT.md), which preserves
+the public GCM recipe and diagnostic with their separate user-level scope.
+Both commit workflows assess [COMMIT_PACKAGES.md](COMMIT_PACKAGES.md), preserving
+staging and exact authority. No global configuration or credential access follows.
+
+Keep the agreed chat/project anchor. Separately authorized temporary worktrees
+belong under the owning project's ignored temp/worktrees/, outside generic cleanup.
+Source versioning inside follows normal Git rules. See
+[worktree rules](COLLABORATION.md#project-anchor-and-temporary-worktrees).
+
+Prefer shallow document/subject folders within approved roots, with companion
+formats together. Existing recipes, helpers and test paths remain authoritative;
+no file migration or new hierarchy is implied. Public content stays generic:
+exclude private governance, credentials, host state and personal paths. Before
+host-changing helpers, disclose effects, privilege, verification and removal;
+start with inspection/dry run and require user-started affirmative action.
+ACLs, OS identities and synchronization settings need a later accepted decision.
+TEMPLATE_SYNC.md alone owns sync state and required source/overlay evidence.
+
 ## Git authority
 
 Git state may be inspected read-only. Staging requires a specific instruction
@@ -188,6 +220,7 @@ supplies no additional authority. The local decision is [PDR-0002](decisions/PDR
 | [`review-code`](.agents/skills/review-code/SKILL.md) | Explicit | Explain existing code or changes in numbered rounds, normally four blocks, and pause for feedback. |
 | [`manage-restricted-storage`](.agents/skills/manage-restricted-storage/SKILL.md) | Explicit | Manage a restricted area and approved metadata while preserving fixture, runtime and effect boundaries. |
 | [`record-idea`](.agents/skills/record-idea/SKILL.md) | Agent or explicit | Capture existing ideas on a clear retention request in the owning backlog; transfer authority remains separate. |
+| [manage-codex-config](.agents/skills/manage-codex-config/SKILL.md) | Agent or explicit |
 | [reuse-fixes](.agents/skills/reuse-fixes/SKILL.md) | Agent or explicit |
 | [review-project](.agents/skills/review-project/SKILL.md) | Explicit |
 | [start-task](.agents/skills/start-task/SKILL.md) | Agent or explicit |
@@ -223,7 +256,7 @@ or reconstruction. Existing local methods prevail; adoption starts no service,
 operational test or installation.
 
 `manage-restricted-storage` is deliberate-only for bounded setup, approved
-metadata and invented-only protection checks. Existing inventories and access
+metadata and selected project profile work. Existing inventories and access
 boundaries prevail; layout, catalog, configuration and protection are separate results.
 
 ## License and attribution

@@ -7,6 +7,39 @@ Use start-task and a compact TASK_HANDOFF.md for bounded continuation. Preserve
 Git selections and unrelated work. Source-template adoption is deliberate;
 TEMPLATE_SYNC.md records the exact source and adaptations.
 
+## Temporary Worktree Exception
+
+Ordinary disposable/never-versioned temp rules exclude Git worktrees.
+Their container stays ignored by the parent checkout; source versioning inside
+follows normal repository authority. Do not clean them as scratch or promote
+them to materials/. Follow [Project Anchor and Temporary Worktrees](COLLABORATION.md#project-anchor-and-temporary-worktrees)
+for placement, access, preflight, recovery and separately authorized removal.
+
+## Document and subproject folders
+
+Keep generic recipes, helper source, examples, scripts and tests in their
+established paths. These preferences do not introduce a package hierarchy,
+environment or catalogs without a selected concrete need. Host state and
+private device bindings remain excluded from versioned public content.
+
+Within each applicable role and access root, prefer shallow folders named for
+the document, subject or subproject. Keep companion formats together, for
+example output/handbook/handbook.pdf and output/handbook/handbook.docx.
+A single deliverable may live directly in output/. Add subfolders only for
+meaningful source roles, access boundaries, workflow, volume or tool requirements.
+Work-item and catalog IDs remain metadata, not mandatory directory names.
+Use descriptive filenames and language or revision suffixes when needed to
+avoid collisions; do not add version-folder chains by default.
+
+Apply this within input/ classifications, materials/ storage states and approved
+output locations; never merge access zones or alter original input content.
+Keep catalog IDs, provenance and relative references stable. Technical build,
+website and dependency trees may need their own structure. Rendering must
+preserve companion formats and unrelated files; cleanup needs its own authority.
+Existing projects and files are not moved or reorganized automatically.
+
+Keep source, tests, fixtures, packages and build/release trees in their tool-required locations.
+
 ## Maintained layout
 
 Retain existing generic recipes, helper source, examples, scripts and tests in
@@ -58,7 +91,7 @@ local decisions/ taxonomy; keep existing accepted records and MIT rights.
 
 Use explicit `manage-restricted-storage` and [RESTRICTED_STORAGE.md](RESTRICTED_STORAGE.md)
 for selected empty-area setup, device connection, approved metadata maintenance
-or invented-only protection checks. Existing access rules, inventories and
+or selected project profile work. Existing access rules, inventories and
 provider/recipient choices prevail. Record layout, catalog, configuration and
 effective protection separately; failures/stale evidence remain visible.
 Metadata never authorizes source discovery, reading, processing or transmission.

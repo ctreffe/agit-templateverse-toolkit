@@ -168,6 +168,42 @@ Der Maintainer koordiniert die templateübergreifende Weiterentwicklung in einem
 Die Governance-Koordination erzeugt keine verborgenen Engineering-Anforderungen. Jede Änderung, die dieses Template betrifft, muss hier durch gepflegte Leitlinien, gegebenenfalls Decision Records, den Changelog und die Release-Historie abgebildet werden. Wiederverwendbare Verbesserungen müssen Code, Tests, Konfiguration und nutzerorientierte Dokumentation aufeinander abgestimmt halten und dürfen nicht eine einzelne Implementierungserfahrung überpassen.
 
 
+## Aktuelle Template-Methoden
+
+Die geerbte [Template-Mission](PHILOSOPHY.md#template-mission) beschreibt den
+gemeinsamen Workflowzweck; PROJECT_CONTEXT.md hält den Zweck des unabhängigen
+öffentlichen Utility-Projekts. Ausdrückliche Reviews und Retrospektiven prüfen
+den Missionsbezug unter Kontrolle des Maintainers. Hybride Methoden oder ein
+anderer Quelltyp brauchen bewusste Auswahl; Template-Aktualität und Reviews
+ändern weder lokale Absicht noch Mitgliedschaft oder Zugriff.
+
+[manage-codex-config](.agents/skills/manage-codex-config/SKILL.md) ist der einzige
+Schreiber für angefragte Projekteinstellungen und ausgewählte Schutzänderungen
+nach [CODEX_CONFIGURATION.md](CODEX_CONFIGURATION.md). Storage-Arbeit verantwortet
+Schutz, Aktivierung und erforderliche Workflow-Nutzbarkeit. Konfiguration und
+Wiederherstellungsstand bleiben erhalten; diese Übernahme aktiviert kein Profil,
+keinen Adapter und keine Host-Einstellung. Initialisierung bleibt abgeschlossen.
+Git-Workflows nutzen [GIT_TRANSPORT.md](GIT_TRANSPORT.md), das das öffentliche
+GCM-Rezept und die Diagnose mit ihrem getrennten Benutzerkontext erhält.
+Beide Commit-Workflows bewerten [COMMIT_PACKAGES.md](COMMIT_PACKAGES.md) bei
+erhaltenem Staging und genauer Autorisierung. Daraus folgt keine Änderung der
+globalen Konfiguration und kein Zugriff auf Anmeldedaten.
+
+Der vereinbarte Chat-/Projektkontext bleibt erhalten. Separat autorisierte temporäre
+Worktrees liegen im ignorierten temp/worktrees/ des besitzenden Projekts außerhalb
+allgemeiner Bereinigung. Ihre Quellversionierung folgt normalen Git-Regeln.
+Siehe [Worktree-Regeln](COLLABORATION.md#project-anchor-and-temporary-worktrees).
+
+Bevorzuge flache Dokument-/Themenordner innerhalb freigegebener Bereiche mit
+gemeinsamen Begleitformaten. Bestehende Rezept-, Helfer- und Testpfade bleiben
+maßgeblich; weder Dateiumzug noch neue Hierarchie sind eingeschlossen. Öffentliche
+Inhalte bleiben generisch: keine private Governance, Anmeldedaten, Host-Zustände
+oder persönlichen Pfade. Vor Host-Eingriffen müssen Wirkung, Privilegien, Prüfung
+und Entfernung erklärt werden; Inspektion/Dry-run und eine vom Benutzer gestartete
+Zustimmung gehen voraus. ACLs, Betriebssystemidentitäten und Synchronisationseinstellungen
+brauchen eine spätere akzeptierte Entscheidung. TEMPLATE_SYNC.md allein hält
+Sync-State und benötigte Quell-/Overlay-Nachweise.
+
 ## Git-Befugnisse
 
 Git-Zustände dürfen lesend geprüft werden. Staging erfordert eine konkrete
@@ -200,6 +236,7 @@ Die lokale Entscheidung steht in [PDR-0002](decisions/PDR-0002-milestone-version
 | [`review-code`](.agents/skills/review-code/SKILL.md) | Explizit | Erklärt bestehenden Code oder Änderungen in nummerierten Runden, gewöhnlich vier Blöcken, und wartet auf Rückmeldung. |
 | [`manage-restricted-storage`](.agents/skills/manage-restricted-storage/SKILL.md) | Explizit | Verwaltet einen gesperrten Bereich und freigegebene Metadaten unter Wahrung der Fixture-, Laufzeit- und Effektgrenzen. |
 | [`record-idea`](.agents/skills/record-idea/SKILL.md) | Agent oder explizit | Hält auf klaren Erfassungswunsch vorhandene Ideen im zuständigen Backlog fest; Transferrechte bleiben separat. |
+| [manage-codex-config](.agents/skills/manage-codex-config/SKILL.md) | Agent oder explizit |
 | [reuse-fixes](.agents/skills/reuse-fixes/SKILL.md) | Agent oder explizit |
 | [review-project](.agents/skills/review-project/SKILL.md) | Explizit |
 | [start-task](.agents/skills/start-task/SKILL.md) | Agent oder explizit |
@@ -236,7 +273,7 @@ der angefragten Definition oder Rekonstruktion. Bestehende lokale Methoden
 haben Vorrang; Übernahme startet weder Dienste noch Tests oder Installationen.
 
 `manage-restricted-storage` ist ein ausdrücklicher Ablauf für begrenzte Einrichtung,
-freigegebene Metadaten und rein erfundene Schutztests. Bestehende Kataloge und
+freigegebene Metadaten und ausgewählte Projektprofilarbeit. Bestehende Kataloge und
 Zugriffsgrenzen gelten; Layout, Katalog, Konfiguration und Schutz sind getrennte Ergebnisse.
 
 ## Lizenz und Zuschreibung

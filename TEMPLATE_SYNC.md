@@ -1,13 +1,22 @@
 # Template synchronization state
 
+## Sync-state storage
+
+TEMPLATE_SYNC.md is the sole durable owner of source revisions, baseline/overlay
+evidence, selected outcomes and reconsideration conditions. Keep that evidence
+here, including the source snapshots below. Do not create a template-sync/
+directory or separate JSON manifest in this project. Temporary comparison work
+is disposable and must not be required to reconstruct the recorded sync state.
+This storage correction changes no adoption checkpoint or project authority.
+
 ## Comparison and adoption
 
 - Verified source: https://github.com/ctreffe/ai-template-dev.
 - Initial project provenance: [PROJECT_CONTEXT.md](PROJECT_CONTEXT.md).
 - Previous full comparison: `d782a842cc5733d34c60a6bce39ddca5a65a9b64`; later selected follow-ups were reviewed again.
-- Last compared upstream commit/date: `65a4f1bc036936ea19195560c77474c5786716f2` / 2026-11-03; exact local overlay below.
-- Latest selected adoption checkpoint: `65a4f1bc036936ea19195560c77474c5786716f2` plus local source snapshot `ba85bbfe3c6929325e1c9195f8ae2bf1b36f89cb47b3051a6252dc937d21d9dc`; NOV03 outcomes independently validated on 2026-11-03.
-- Fully resolved through: `65a4f1bc036936ea19195560c77474c5786716f2` plus the identified local working-tree snapshot for the reviewed source delta and earlier applicable selections; deliberate rejections retained; no deferred/conflicting adoption item remains.
+- Last compared upstream commit/date: `a5044248b894a87a86ab64c1cb9afd659ffa5f8b` / 2026-11-08; clean local source.
+- Latest selected adoption checkpoint: `a5044248b894a87a86ab64c1cb9afd659ffa5f8b`; NOV08 ongoing-workflow outcomes independently validated on 2026-11-08.
+- Fully resolved through: `a5044248b894a87a86ab64c1cb9afd659ffa5f8b` for compared source changes, adopted/adapted or deliberately rejected below; no deferred/conflicting adoption item remains.
 - [Pre-sync lineage, earlier selections, domain evidence and limitations](https://github.com/ctreffe/agit-templateverse-toolkit/blob/9493fab17b382c50ab4a50e03a5713d39ab15354/TEMPLATE_SYNC.md).
   No unresolved deferred/conflicting adoption item was carried from that record;
   deferred operational/domain tests remain open, not new template-adoption evidence.
@@ -79,7 +88,7 @@ independent focused evidence below. Operational/domain limits remain separate.
 The maintainer selected the current local source with project adaptations.
 Compared from `08ed8c62ae085a803ad9426ec5ca2d629826cfbc` through source HEAD `65a4f1bc036936ea19195560c77474c5786716f2`.
 The working-tree overlay is not a commit. Snapshot: `ba85bbfe3c6929325e1c9195f8ae2bf1b36f89cb47b3051a6252dc937d21d9dc`.
-The [portable source manifest](template-sync/2026-11-03-source.json) records its
+The [source snapshot 2026-11-03](#source-snapshot-2026-11-03) records its
 LF-normalized hashes and complete source-delta paths. No fetch or remote
 freshness claim is included.
 
@@ -158,3 +167,177 @@ Full project/domain/release/milestone and family gates were not run except the
 explicitly required static local gate above. Existing operational evidence gaps
 remain project-owned and are not adoption blockers for these source methods.
 No selected source-workflow implementation remains.
+
+## Source snapshot 2026-11-03
+
+Source evidence retained in this ledger; no separate manifest is required.
+
+| Field | Value |
+| --- | --- |
+| `source_repository` | ai-template-dev |
+| `source_head` | 65a4f1bc036936ea19195560c77474c5786716f2 |
+| `compared_from` | 08ed8c62ae085a803ad9426ec5ca2d629826cfbc |
+| `source_snapshot_sha256` | ba85bbfe3c6929325e1c9195f8ae2bf1b36f89cb47b3051a6252dc937d21d9dc |
+| `hash_convention` | SHA-256 of UTF-8 text without BOM, CRLF normalized to LF |
+| `note` | Local source snapshot; no remote freshness, commit or release is implied. |
+
+### source working tree overlay
+
+| Source path | SHA-256 / value |
+| --- | --- |
+| `.agents/skills/perform-retrospective/SKILL.md` | `84c020c5f69a68f0385a3d8926bb5ccd2bbe192a64952dcbe7de28368e8909eb` |
+| `.agents/skills/record-idea/SKILL.md` | `ab7ac5b6ff22d93c4fd862ee197c270ea8538ffbf4ae6db84dcf40d11bebf76c` |
+| `.agents/skills/record-idea/agents/openai.yaml` | `8619a54e8c098122a7f3881394f84ca89b684366e848233a29ad18b6ec363935` |
+| `.agents/skills/start-project/SKILL.md` | `84061f4d62e6eb9f899370c5a88204c77d101530c1654fe9ca87fbeb35d1a057` |
+| `.agents/skills/sync-template/SKILL.md` | `3183117c9369bebf52f44f4c057de3cd6579d04ba2441106b7b339773fd5a719` |
+| `AGENTS.md` | `09431ea758f78d5b0f3af6b67793f397ce7b8de51bf1fef8fa21afa9dbda7b79` |
+| `CHANGELOG.md` | `7e89aaa2fe2ece4c654a23e8d116de982787ab902a6589c0db305b9f1d412d06` |
+| `COLLABORATION.md` | `9b862f4d97758fc7323cb5e70f21b2d860ef91dd71ddf5c3b909b6b3079ed759` |
+| `IDEAS.md` | `b304112ad02ecea877c7d65b98b4101f7e894e3b8358d5ce14e1b2633f4c3bb7` |
+| `PROJECT_SETUP.md` | `80cbbb3467d7c4a8610c2a41fd36ea896c392f3f49fb6122f6c7269cc85e1caf` |
+| `README.de.md` | `202fb468871395c18621f8966c5ee99614cd0eda1b6376f393df70b54e433b0e` |
+| `README.md` | `74329066ca173fb618d0e0dd7e80314300f864644395aa53fb64ce7eb942e22f` |
+| `RETROSPECTIVE_PATHS.example.md` | `c50e5eb14db0e60dcef596d540f793b6d0daa19277889b0a95bc0568803aef25` |
+| `TASK_HANDOFF.md` | `e0ed95f3a8b0fb8ddfcc88130a627354f992f52cab3392f239cd1d447108ed7e` |
+| `templates/IDEAS.md` | `d54757310e2c131bf2ff9b8eb2dbf8c5538a73318dee4887e179aac71f7eee35` |
+
+### source delta
+
+| Order | Source path / value |
+| --- | --- |
+| 1 | `.agents/skills/manage-restricted-storage/SKILL.md` |
+| 2 | `.agents/skills/manage-restricted-storage/agents/openai.yaml` |
+| 3 | `.agents/skills/manage-restricted-storage/references/codex-permissions.md` |
+| 4 | `.agents/skills/perform-retrospective/SKILL.md` |
+| 5 | `.agents/skills/record-idea/SKILL.md` |
+| 6 | `.agents/skills/record-idea/agents/openai.yaml` |
+| 7 | `.agents/skills/review-code/SKILL.md` |
+| 8 | `.agents/skills/review-code/agents/openai.yaml` |
+| 9 | `.agents/skills/setup-test-environment/SKILL.md` |
+| 10 | `.agents/skills/start-project/SKILL.md` |
+| 11 | `.agents/skills/sync-template/SKILL.md` |
+| 12 | `.agents/skills/test-code/SKILL.md` |
+| 13 | `.agents/skills/test-code/agents/openai.yaml` |
+| 14 | `.gitignore` |
+| 15 | `AGENTS.md` |
+| 16 | `CHANGELOG.md` |
+| 17 | `COLLABORATION.md` |
+| 18 | `DOCUMENTATION.md` |
+| 19 | `IDEAS.md` |
+| 20 | `PROJECT_SETUP.md` |
+| 21 | `README.de.md` |
+| 22 | `README.md` |
+| 23 | `REPOSITORY.md` |
+| 24 | `RESTRICTED_STORAGE.md` |
+| 25 | `RETROSPECTIVE_PATHS.example.md` |
+| 26 | `SYNCHRONIZED_STORAGE.md` |
+| 27 | `TASK_HANDOFF.md` |
+| 28 | `templates/IDEAS.md` |
+| 29 | `templates/RESTRICTED_CATALOG.md` |
+| 30 | `templates/RESTRICTED_STORAGE.local.example.md` |
+| 31 | `templates/TEST_ENVIRONMENT.md` |
+| 32 | `templates/TEST_REPORT.md` |
+
+## Source snapshot 2026-11-08
+
+- Source repository: ai-template-dev, version 1.8.0.
+- Exact source commit: `a5044248b894a87a86ab64c1cb9afd659ffa5f8b`.
+- Source working-tree overlay: none; selected source was clean.
+- Previous comparison: `65a4f1bc036936ea19195560c77474c5786716f2` plus the
+  [2026-11-03 overlay evidence](#source-snapshot-2026-11-03) retained above.
+- The committed revision and per-path outcomes reproduce the scope; required
+  overlay hashes remain in this ledger. No JSON manifest or extra template-sync/
+  folder is created. This comparison makes no remote freshness claim.
+
+## Selected synchronization — 2026-11-08
+
+Status: completed for the maintainer-selected ongoing-workflow package.
+
+Selected adoption advances after independent validation. Earlier outcomes,
+exclusions and historical source evidence remain intact. Rejected source deltas
+are resolved deliberately rather than silently adopted.
+
+| Change ID | Source path/concept | Outcome | Local application or reason | Next review condition |
+| --- | --- | --- | --- | --- |
+| NOV08-001 | `.agents/skills/commit-changes/SKILL.md` | adopted | Selected ongoing source method; local public-utility and host-operation boundaries retained. | Next source delta or changed local rule; initialization stays separately selected. |
+| NOV08-002 | `.agents/skills/commit-milestone/SKILL.md` | adopted | Selected ongoing source method; local public-utility and host-operation boundaries retained. | Next source delta or changed local rule; initialization stays separately selected. |
+| NOV08-003 | `.agents/skills/manage-codex-config/SKILL.md` | adapted | Config ownership and selected-profile usability preserve generic public content, host disclosure/dry-run/user action and later ACL/identity/sync-setting decisions; initialization omitted. | Next source delta or changed local rule; initialization stays separately selected. |
+| NOV08-004 | `.agents/skills/manage-codex-config/agents/openai.yaml` | adopted | Selected ongoing source method; local public-utility and host-operation boundaries retained. | Next source delta or changed local rule; initialization stays separately selected. |
+| NOV08-005 | `.agents/skills/manage-restricted-storage/SKILL.md` | adapted | Config ownership and selected-profile usability preserve generic public content, host disclosure/dry-run/user action and later ACL/identity/sync-setting decisions; initialization omitted. | Next source delta or changed local rule; initialization stays separately selected. |
+| NOV08-006 | `.agents/skills/manage-restricted-storage/assets/native_git_ssh.cs` | adopted | Selected ongoing source method; local public-utility and host-operation boundaries retained. | Next source delta or changed local rule; initialization stays separately selected. |
+| NOV08-007 | `.agents/skills/manage-restricted-storage/references/codex-permissions.md` | adopted | Selected ongoing source method; local public-utility and host-operation boundaries retained. | Next source delta or changed local rule; initialization stays separately selected. |
+| NOV08-008 | `.agents/skills/manage-restricted-storage/references/profile-usability.md` | adopted | Selected ongoing source method; local public-utility and host-operation boundaries retained. | Next source delta or changed local rule; initialization stays separately selected. |
+| NOV08-009 | `.agents/skills/perform-retrospective/SKILL.md` | adapted | Selected ongoing source method; local public-utility and host-operation boundaries retained. | Next source delta or changed local rule; initialization stays separately selected. |
+| NOV08-010 | `.agents/skills/record-decision/SKILL.md` | adopted | Selected ongoing source method; local public-utility and host-operation boundaries retained. | Next source delta or changed local rule; initialization stays separately selected. |
+| NOV08-011 | `.agents/skills/reuse-fixes/SKILL.md` | adopted | Selected ongoing source method; local public-utility and host-operation boundaries retained. | Next source delta or changed local rule; initialization stays separately selected. |
+| NOV08-012 | `.agents/skills/review-project/SKILL.md` | adopted | Selected ongoing source method; local public-utility and host-operation boundaries retained. | Next source delta or changed local rule; initialization stays separately selected. |
+| NOV08-013 | `.agents/skills/start-project/SKILL.md` | rejected | Preserve project identity/history and completed initialization; no source release/task/idea or setup scaffold import. | Next source delta or changed local rule; initialization stays separately selected. |
+| NOV08-014 | `.agents/skills/sync-template/SKILL.md` | adapted | Keep durable source/overlay evidence in TEMPLATE_SYNC.md without a separate JSON manifest or template-sync folder. | Next source delta or changed local rule; initialization stays separately selected. |
+| NOV08-015 | `.gitignore` | adapted | Add local config/recovery ignores and missing temp working-data exclusion; retain only the public temp README as a tracked guidance exception. | Next source delta or changed local rule; initialization stays separately selected. |
+| NOV08-016 | `AGENTS.md` | adapted | Selected ongoing source method; local public-utility and host-operation boundaries retained. | Next source delta or changed local rule; initialization stays separately selected. |
+| NOV08-017 | `CHANGELOG.md` | rejected | Preserve project identity/history and completed initialization; no source release/task/idea or setup scaffold import. | Next source delta or changed local rule; initialization stays separately selected. |
+| NOV08-018 | `CODEX_CONFIGURATION.md` | adapted | Selected ongoing source method; local public-utility and host-operation boundaries retained. | Next source delta or changed local rule; initialization stays separately selected. |
+| NOV08-019 | `COLLABORATION.md` | adapted | Selected ongoing source method; local public-utility and host-operation boundaries retained. | Next source delta or changed local rule; initialization stays separately selected. |
+| NOV08-020 | `COMMIT_PACKAGES.md` | adopted | Selected ongoing source method; local public-utility and host-operation boundaries retained. | Next source delta or changed local rule; initialization stays separately selected. |
+| NOV08-021 | `DOCUMENTATION.md` | adapted | Selected ongoing source method; local public-utility and host-operation boundaries retained. | Next source delta or changed local rule; initialization stays separately selected. |
+| NOV08-022 | `GIT_TRANSPORT.md` | adapted | Reference existing bilingual GCM recipe and diagnostic; distinguish its user-level procedure from project config; retain historical evidence without claiming current qualification. | Next source delta or changed local rule; initialization stays separately selected. |
+| NOV08-023 | `PHILOSOPHY.md` | adapted | Selected ongoing source method; local public-utility and host-operation boundaries retained. | Next source delta or changed local rule; initialization stays separately selected. |
+| NOV08-024 | `PROJECT_CONTEXT.md` | rejected | Preserve project identity/history and completed initialization; no source release/task/idea or setup scaffold import. | Next source delta or changed local rule; initialization stays separately selected. |
+| NOV08-025 | `PROJECT_SETUP.md` | rejected | Preserve project identity/history and completed initialization; no source release/task/idea or setup scaffold import. | Next source delta or changed local rule; initialization stays separately selected. |
+| NOV08-026 | `README.de.md` | adapted | Mapped to TEMPLATE_README.de.md under DDR-0001; preserve introductions, local inventory, licensing and host gates. | Next source delta or changed local rule; initialization stays separately selected. |
+| NOV08-027 | `README.md` | adapted | Mapped to TEMPLATE_README.md under DDR-0001; preserve introductions, local inventory, licensing and host gates. | Next source delta or changed local rule; initialization stays separately selected. |
+| NOV08-028 | `REPOSITORY.md` | adapted | Folder/worktree methods retain recipe/helper/test paths; no file migration, new hierarchy or host operation. | Next source delta or changed local rule; initialization stays separately selected. |
+| NOV08-029 | `RESTRICTED_STORAGE.md` | adopted | Selected ongoing source method; local public-utility and host-operation boundaries retained. | Next source delta or changed local rule; initialization stays separately selected. |
+| NOV08-030 | `SYNCHRONIZED_STORAGE.md` | adapted | Selected ongoing source method; local public-utility and host-operation boundaries retained. | Next source delta or changed local rule; initialization stays separately selected. |
+| NOV08-031 | `TASK_HANDOFF.md` | rejected | Preserve project identity/history and completed initialization; no source release/task/idea or setup scaffold import. | Next source delta or changed local rule; initialization stays separately selected. |
+| NOV08-032 | `VERSION` | rejected | Preserve project identity/history and completed initialization; no source release/task/idea or setup scaffold import. | Next source delta or changed local rule; initialization stays separately selected. |
+| NOV08-033 | `temp/README.md` | adapted | Add local config/recovery ignores and missing temp working-data exclusion; retain only the public temp README as a tracked guidance exception. | Next source delta or changed local rule; initialization stays separately selected. |
+| NOV08-034 | `templates/RESTRICTED_STORAGE.local.example.md` | adopted | Selected ongoing source method; local public-utility and host-operation boundaries retained. | Next source delta or changed local rule; initialization stays separately selected. |
+| NOV08-035 | `.agents/skills/record-idea/SKILL.md` | already present | Unchanged from the previous adopted source overlay. | Next source delta or changed local rule; initialization stays separately selected. |
+| NOV08-036 | `.agents/skills/record-idea/agents/openai.yaml` | already present | Unchanged from the previous adopted source overlay. | Next source delta or changed local rule; initialization stays separately selected. |
+| NOV08-037 | `IDEAS.md` | already present | Unchanged from the previous adopted source overlay. | Next source delta or changed local rule; initialization stays separately selected. |
+| NOV08-038 | `RETROSPECTIVE_PATHS.example.md` | already present | Unchanged from the previous adopted source overlay. | Next source delta or changed local rule; initialization stays separately selected. |
+| NOV08-039 | `templates/IDEAS.md` | already present | Unchanged from the previous adopted source overlay. | Next source delta or changed local rule; initialization stays separately selected. |
+
+### Local boundaries
+
+The Toolkit remains an independent public utility project, not a family member
+or source template. Generic recipes, helper source, examples, tests and local
+idea IDs remain authoritative. Preserve DDR-0001 and PDR-0001/0002. No private
+Governance evidence, credentials, host state or personal bindings were imported.
+
+Host-changing helpers retain disclosure of paths, effects, privilege, verification
+and removal, inspection/dry run and a user-started affirmative action. ACLs, OS
+identities and synchronization settings require a later accepted decision. New
+profile guidance grants no such host operation or credential provisioning.
+
+The public GCM recipe, its German translation and read-only diagnostic retain
+their bytes. The Git guide references them without replacing their user-level
+scope with project-local configuration. No guide/asset is deployed or qualified
+as a live host route by this adoption. Initialization remains complete and absent
+setup files stay absent. No actual config, adapter or profile was activated.
+
+### Independent validation — 2026-11-08
+
+- Nine changed/new skills passed the local Test-CodexSkill.ps1 wrapper with the
+  existing exact managed interpreter and pinned PyYAML 6.0.3; no installation.
+- The complete 20-skill inventory includes new manage-codex-config. Fourteen
+  YAML metadata files and six intentional omissions match source invocation
+  policy. Retired initialization/creation skills and aliases remain absent.
+- Both README language pairs retain aligned headings; guide additions, catalogs
+  and local navigation were reviewed in both languages. Unselected skills retain
+  their hashes. Fourteen selected identity/config/recipe/decision files or absence
+  states remain unchanged.
+- Before finalization, 165 permitted local links/anchors and all 28 implementation
+  readbacks passed; six references remained outside generic scope. New content
+  contains generic placeholder examples rather than personal device bindings.
+- Source/diff review covered public utility boundaries, config ownership, the
+  existing Git recipe, commit packages, mission/writing, worktree methods and the
+  added temp ignore boundary. The locally required git diff --check passed.
+
+Final checkpoint links/readback and changed ignore rules receive focused checks.
+Host-changing helpers, credential/network diagnostics, adapter compilation and
+real host operations were not run. Existing diagnostic/helper behavior was not
+changed, so runtime/synthetic helper checks were not applicable. Full engineering
+and family/milestone gates were not run. HEAD and staging were preserved; no Git
+mutation, installation, publication or project milestone closure occurred.
